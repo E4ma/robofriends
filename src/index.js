@@ -2,26 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import Hello from './hello';
-import Card from './card';
-import Footer from './footer';
+// import Card from './card';
+import CardList from './CardList'; 
+// import Footer from './footer';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 import { robots } from './robots';
 //{} => because it is not static meaning can be exported multiple times. if new const in robots.js = cats; { robots, cats }
 
-ReactDOM.render(
-  <React.StrictMode>
 
-    {/* <Hello greeting={'Hello' + ' ' + 'React Ninja'}/> */}
-    <div>
-    <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
-    <Card id={robots[1].id} name={robots[1].name} email={robots[1].email}/>
-    <Card id={robots[2].id} name={robots[2].name} email={robots[2].email}/>
-    <Footer social={'social icons'}/>
-    </div>
-   </React.StrictMode>,
-  document.getElementById('root')
-);
+
+
+
+ReactDOM.render(
+  <CardList robots={robots}/>
+  // cardlist is using robots props
+  , document.getElementById('root'));
+
+// ReactDOM.render(
+//   <React.StrictMode>
+
+//     {/* <Hello greeting={'Hello' + ' ' + 'React Ninja'}/> */}
+//     <div>
+//     <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
+//     <Card id={robots[1].id} name={robots[1].name} email={robots[1].email}/>
+//     <Card id={robots[2].id} name={robots[2].name} email={robots[2].email}/>
+//     <Footer social={'social icons'}/>
+//     </div>
+//    </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
