@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './containers/App';
 // import Hello from './hello';
 // import Card from './card';
-import CardList from './CardList'; 
+import CardList from './components/CardList'; 
 // import Footer from './footer';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
@@ -13,11 +14,11 @@ import { robots } from './robots';
 
 
 
+ReactDOM.render(<App />, document.getElementById('root'));
+reportWebVitals();
 
-ReactDOM.render(
-  <CardList robots={robots}/>
-  // cardlist is using robots props
-  , document.getElementById('root'));
+
+
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -36,4 +37,4 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
