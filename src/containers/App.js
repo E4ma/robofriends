@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import Hello from '../components/hello';
+import Footer from '../components/footer';
 import './App.css';
 
 class App extends Component {
@@ -37,6 +39,8 @@ class App extends Component {
           <Scroll>
             <CardList robots={filteredRobots} />
           </Scroll>
+          <Hello />
+          <Footer />
         </div>
       );
   }

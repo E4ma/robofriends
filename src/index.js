@@ -4,11 +4,11 @@ import './index.css';
 import App from './containers/App';
 // import Hello from './hello';
 // import Card from './card';
-import CardList from './components/CardList'; 
+// import CardList from './components/CardList'; 
 // import Footer from './footer';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import { robots } from './robots';
+// import { robots } from './robots';
 //{} => because it is not static meaning can be exported multiple times. if new const in robots.js = cats; { robots, cats }
 
 
